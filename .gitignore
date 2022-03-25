@@ -3,3 +3,6 @@
 
 # Ada Library Information
 *.ali
+/KhN/.vs/KhN/v17
+/KhN/KhN.Server/bin/Debug/net6.0
+/KhN/KhN.Server/obj
