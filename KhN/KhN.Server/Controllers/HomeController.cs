@@ -11,14 +11,14 @@ namespace KhN.Server.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            _logger.LogInformation(1, "NLog injected into HomeController");
+            _logger.LogInformation("NLog injected into HomeController");
         }
 
         [HttpGet]
         public string Get()
         {
-            _logger.LogCritical("Hello, this is the index!");
-            _logger.LogError("Hello, this is the index!");
+            _logger.LogCritical("Hello, this is the Fatal(Critical)!");
+            _logger.LogError("Hello, this is the Erorr!");
             return "Hello World";
         }
     }
