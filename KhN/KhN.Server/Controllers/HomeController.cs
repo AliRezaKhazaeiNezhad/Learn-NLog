@@ -18,6 +18,7 @@ namespace KhN.Server.Controllers
         public string Get()
         {
             _logger.LogCritical("Hello, this is the index!");
+            _logger.LogError("Hello, this is the index!");
             return "Hello World";
         }
     }
