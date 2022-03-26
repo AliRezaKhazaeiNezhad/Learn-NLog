@@ -11,7 +11,7 @@ namespace KhN.Server.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            _logger.LogDebug(1, "NLog injected into HomeController");
+            _logger.LogInformation(1, "NLog injected into HomeController");
         }
 
         [HttpGet]
