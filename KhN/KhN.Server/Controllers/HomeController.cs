@@ -47,6 +47,7 @@ namespace KhN.Server.Controllers
             _logger.LogCritical("Hello, this is the Fatal");
             #endregion
 
+
             return "Hello World";
         }
     }
