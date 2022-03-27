@@ -11,6 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="NlogStudy.config">
+      <CopyToOutputDirectory> </CopyToOutputDirectory>
+    </Content>
     <Content Update="Nlog.config">
       <CopyToOutputDirectory> </CopyToOutputDirectory>
     </Content>
