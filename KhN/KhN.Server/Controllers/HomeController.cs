@@ -19,6 +19,7 @@ namespace KhN.Server.Controllers
         {
             _logger.LogCritical("Hello, this is the Fatal(Critical)!");
             _logger.LogError("Hello, this is the Erorr!");
+
             return "Hello World";
         }
     }
