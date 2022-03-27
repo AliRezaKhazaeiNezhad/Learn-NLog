@@ -21,3 +21,14 @@ Github:
 Nuget:
 	NLog.Web.AspNetCore
 	Version : 4.0.0-rc2
+
+
+
+Session21:
+	${logger} - Name of the Logger-object used for writing LogEvent.
+	${level} - LogEvent Level of importance / severity.
+	${exception} - Exception object included with the LogEvent.
+	${event-properties} - LogEvent Properties - From Structured logging or explicity added to LogEventInfo.Properties.
+	${activityid} - System.Diagnostics.Trace.CorrelationManager.ActivityId allows you to assign and capture correlation-id / request-id. Alternative one can use ${aspnet-TraceIdentifier}
+	${scopeproperty} - Provide context properties for the current thread with async Task-support Replaces the legacy ${mdlc} and ${mdc} from before NLog 5.0
+	${scopenested} - Provide nested scope details for the current thread with async Task-support Replaces the legacy ${ndlc} and ${ndc} from before NLog 5.0
