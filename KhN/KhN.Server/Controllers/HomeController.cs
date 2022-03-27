@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using NLog.Time;
+using Microsoft.AspNetCore.Mvc;
 
 namespace KhN.Server.Controllers
 {
@@ -28,6 +29,20 @@ namespace KhN.Server.Controllers
 
 
             #region Session22
+            //_logger.LogCritical("Hello, this is the Fatal(Critical)!");
+            //_logger.LogCritical("Hello, this is the Fatal");
+            #endregion
+
+
+            #region Session23
+            //TimeSource.Current = new FastLocalTimeSource();
+            TimeSource.Current = new CustomTimeZoneTimeSource()
+            {
+                //Zone = "Azerbaijan Standard Time"
+                //Zone = "Central Standard Time"
+                Zone = "Iran Standard Time"
+            };
+
             _logger.LogCritical("Hello, this is the Fatal(Critical)!");
             _logger.LogCritical("Hello, this is the Fatal");
             #endregion
